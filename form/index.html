@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form</title>
+  </head>
+  <body>
+    <h3>smiple form -1</h3>
+    <form
+      action="./index.html"
+      style="background-color: burlywood"
+      autocomplete="on"
+    >
+      <fieldset>
+        <legend>persenal INFO:</legend>
+        <lable for="fname">First name : </lable><br />
+        <input name="fname" id="fname" value="john" /><br />
+        <lable for="lname">Last name : </lable><br />
+        <input name="lname" id="lname" value="Doe" /><br /><br />
+        <input type="submit" value="submit" />
+        <input type="reset" value="reset">
+
+      </fieldset>
+    </form>
+    <br /><br />
+
+    <h3>Radio Buttons</h3>
+    <h4>Choose your favorite web languages:</h4>
+
+    <form style="background-color: rgb(44, 66, 59)">
+      <fieldset>
+        <legend>web languages:</legend>
+        <input type="radio" id="CSS" name="CSS" />
+        <lable for="CSS">CSS</lable><br />
+        <input type="radio" id="html" name="html" />
+        <lable for="html">HTML</lable><br />
+        <input type="radio" id="JavaScript" name="JavaScript" />
+        <label for="javascript">JavaScript</label><br /><br />
+        <input type="submit" value="submit" />
+      </fieldset>
+    </form>
+    <br />
+
+    <h3>check Box</h3>
+    <h4>Choose your specialization</h4>
+    <form style="background-color: rgb(62, 121, 4)">
+      <fieldset>
+        <legend>specialization</legend>
+        <input type="checkbox" id="AWS" name="AWS" />
+        <lable for="AWS">AWS</lable><br />
+
+        <input type="checkbox" id="ML" name="AWS" />
+        <lable for="ML">ML</lable><br />
+
+        <input type="checkbox" id="Data Science" name="Data Science" />
+        <lable for="Data-Science">Data Science</lable><br />
+
+        <input type="checkbox" id="Data-Analytics" name="Data-Analytics" />
+        <lable for="Data-Analytics">Data-Analytics</lable><br />
+
+        <input type="checkbox" id="AI" name="AI" />
+        <lable for="AI">AI</lable><br />
+
+        <input type="checkbox" id="AZURE" name="AZURE" />
+        <lable for="AZURE">AZURE</lable><br />
+
+        <input type="checkbox" id="Sales-Force" name="Sales-Force" />
+        <lable for="Sales-Force">Sales Force</lable><br /><br />
+
+        <input type="submit" value="submit" />
+      </fieldset>
+    </form>
+
+    <br />
+    <h3>select element</h3>
+
+    <form style="background-color: rgb(99, 50, 104)">
+      <fieldset>
+        <legend>University Year:</legend>
+        <label for="year">Choose your year:</label>
+        <select id="year" name="year" size="2">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4" selected>4</option>
+          <option value="5">5</option>
+        </select>
+        <input type="submit" value="submit" />
+      </fieldset>
+    </form>
+    <br />
+    <br />
+
+    <h3>TextArea</h3>
+    <form style="background-color: rgb(243, 142, 10)">
+      <fieldset>
+        <legend>Comments:</legend>
+        <label for="meassage">Leave your meassage here</label>
+        <textarea name="meassage" rows="10" cols="50"></textarea>
+        <input type="submit" value="submit" />
+      </fieldset>
+    </form>
+    <br />
+    <br />
+
+    <h3>Datalist</h3>
+    <form style="background-color: darkmagenta">
+      <fieldset>
+        <legend>Datalist</legend>
+        <label for="datalist">Choose your favorite Browser</label>
+        <input list="Browser" name="Browser" />
+        <datalist id="Browser">
+          <option value="Chrome">Chrome</option>
+          <option value="Edge">Edge</option>
+          <option value="FireFox">FireFox</option>
+          <option value="Opera">Opera</option>
+          <option value="Safari">Safari</option>
+        </datalist>
+      </fieldset>
+    </form>
+
+    <h3>output - calculation</h3>
+    <form style="background-color: rgb(199, 171, 199)" oninput="x.value=parseInt(a.value) + parseInt(b.value)">
+      <fieldset>
+        <legend>Datalist</legend>
+        
+       0 <input type="range" id="a" name="number" value="50">  100 + 
+         <input type="number" id="b" name="range" value="50" step="2"> = <output name="x" for="a b"></output>
+
+        <input type="submit">
+        </datalist>
+      </fieldset>
+    </form>
+
+
+    <h3>logIN</h3>
+    <form>
+      <fieldset>
+        <legend>log in</legend>
+        <label for="username">username</label><br/>
+        <input type="text" id="username" name="username"><br/>
+        <label for="pws" id="pws" name="pws">Password</label><br/>
+        <input type="password" id="pws" name="password"><br/>
+        <input type="submit" value="submit">
+      </fieldset>
+    </form>
+
+
+    <h3>Color</h3>
+    <form>
+      <fieldset>
+        <legend>log in</legend>
+        <label for="username">Choose your favorite color</label><br/>
+        <input type="color" id="favcolor" name="favcolor"><br/>
+        <input type="submit" value="submit">
+      </fieldset>
+    </form>
+
+    <h3>date form</h3>
+    <form>
+      <fieldset>
+        <legend>log in</legend>
+        <label for="date">Enter your birth date if you are over 18:</label><br/>
+        <input type="date" id="date" name="date" min="01-01-2007" max="01-02-2025"><br/>
+        <input type="submit" value="submit">
+      </fieldset>
+    </form>
+
+    <h3>File</h3>
+    <form style="background-color: darkslateblue;">
+      <fieldset>
+        <legend>select file</legend>
+        <label for="file">input files</label><br/>
+        <input type="file" id="file" name="file"><br/><br/>
+        <input type="submit" value="submit"><br/>
+      </fieldset>
+    </form>
+
+
+  </body>
+</html>
+
